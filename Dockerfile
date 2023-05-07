@@ -3,7 +3,8 @@ FROM ruby:3.0.3-alpine
 ENV BUNDLER_VERSION=2.2.32
 
 RUN apk add --update --no-cache \
-      build-base 
+      build-base \
+      shared-mime-info  
 
 WORKDIR /app
 
