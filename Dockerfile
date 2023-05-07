@@ -4,7 +4,8 @@ ENV BUNDLER_VERSION=2.2.32
 
 RUN apk add --update --no-cache \
       build-base \
-      shared-mime-info  
+      shared-mime-info \
+      tzdata 
 
 WORKDIR /app
 
