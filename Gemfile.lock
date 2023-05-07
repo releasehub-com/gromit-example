@@ -87,9 +87,26 @@ GEM
     debug (1.7.2)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dotenv (2.8.1)
     erubi (1.12.0)
+    faraday (2.7.4)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.0.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    gromit (0.1.0)
+      dotenv
+      httparty
+      rails (>= 7.0.1)
+      redis (~> 4.2)
+      rejson-rb (>= 1.0.1)
+      ruby-openai
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.6)
@@ -101,6 +118,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json (2.6.3)
     loofah (2.20.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -115,6 +133,8 @@ GEM
     mini_mime (1.1.2)
     minitest (5.18.0)
     msgpack (1.7.0)
+    multi_xml (0.6.0)
+    multipart-post (2.3.0)
     net-imap (0.3.4)
       date
       net-protocol
@@ -161,11 +181,18 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    redis (4.8.1)
+    redis (4.2.5)
     regexp_parser (2.8.0)
+    rejson-rb (1.0.1)
+      json (~> 2.0)
+      redis (~> 4.2.1)
     reline (0.3.3)
       io-console (~> 0.5)
     rexml (3.2.5)
+    ruby-openai (4.0.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.9.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -213,6 +240,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  gromit
   importmap-rails
   jbuilder
   puma (~> 5.0)
