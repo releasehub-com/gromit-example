@@ -5,7 +5,7 @@ services:
     build:
       context: .
     ports:
-      - "9292:9292"
+      - "3000:3000"
     environment:
       - OPENAI_API_KEY=your_openai_api_key
       - REDIS_HOST=redis
@@ -17,7 +17,7 @@ services:
     ports:
       - "9293:9293"
     environment:
-      - GROMIT_BACKEND_URL=http://backend:9292
+      - GROMIT_BACKEND_URL=http://backend:3000
       - OPENAI_KEY=your_openai_api_key
 
   redis:
