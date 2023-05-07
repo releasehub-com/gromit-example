@@ -14,4 +14,4 @@ RUN bundle install
 
 COPY . .
 
-CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
