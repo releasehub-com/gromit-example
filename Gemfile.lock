@@ -97,7 +97,7 @@ GEM
     faraday-net_http (3.0.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    gromit (0.1.1)
+    gromit (0.1.2)
       dotenv
       httparty
       rails (>= 7.0.1)
