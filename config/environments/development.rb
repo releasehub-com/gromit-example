@@ -62,6 +62,7 @@ Rails.application.configure do
   config.hosts << /.*\.gethandsup\.com/
   config.hosts << /.*\.releasehub\.com/
   config.hosts << /.*\.releaseapp\.io/
+  config.hosts << /backend/ # direct access from frontend
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
