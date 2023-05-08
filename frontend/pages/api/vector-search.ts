@@ -11,7 +11,7 @@ export const config = {
 }
 
 const openAiKey = process.env.OPENAI_KEY
-const vapeyBackendUrl = process.env.VAPEY_BACKEND_URL
+const gromitBackendUrl = process.env.GROMIT_BACKEND_URL
 
 export default async function handler(req: NextRequest) {
   try {
@@ -19,8 +19,8 @@ export default async function handler(req: NextRequest) {
       throw new ApplicationError('Missing environment variable OPENAI_KEY')
     }
 
-    if (!vapeyBackendUrl) {
-      throw new ApplicationError('Missing environment variable VAPEY_BACKEND_URL')
+    if (!gromitBackendUrl) {
+      throw new ApplicationError('Missing environment variable GROMIT_BACKEND_URL')
     }
 
     const requestData = await req.json()
@@ -77,7 +77,7 @@ export default async function handler(req: NextRequest) {
       data: [{ embedding }],
     } = await embeddingResponse.json()
 
-    const searchResponse = await fetch(`${vapeyBackendUrl}/search`, {
+    const searchResponse = await fetch(`${gromitBackendUrl}/search`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
