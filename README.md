@@ -37,9 +37,11 @@ will need to stop/disable the old version of redis.
   brew install redis-stack
 ```
 
+The Rails backend lives in the `backend` directory
+
 Create a .env file with your `OPEN_API_KEY`
 ```
-OPEN_API_KEY=your_openai_api_key
+OPEN_API_KEY=your-openai-key
 ```
 
 Start the Rails Server
