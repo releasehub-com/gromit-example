@@ -30,7 +30,7 @@ able to access the backend Rails API at `http://localhost:3000` and the
 next.js frontend at `http://localhost:9293`
 
 ### Running Locally on MacOS
-Install redis-stack-server note that if are already running Redis you
+Install redis-stack-server note that if you are already running Redis you
 will need to stop/disable the old version of redis. 
 ```bash
   brew tap redis-stack/redis-stack
