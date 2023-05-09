@@ -12,6 +12,14 @@ your documentation locally and/or uploading them to a remote Gromit based API se
 
 ## Usage:
 
+### Running in Release
+
+* Create your account in [Release](https://app.release.com/) if you don't already have one
+* Create a new application in Release using a fork of this repository
+* Update the `OPENAI_API_KEY` and `OPENAI_KEY` env variables with your OpenAI API Key
+* Deploy your application
+* Release will provide URLs for both the frontend and backend applications
+
 ### Running Everything Locally in Docker
 ```bash
   docker-compose up
@@ -50,14 +58,6 @@ Start the Next.js frontend
 ```bash
 npnm run dev
 ```
-
-### Running in Release
-
-* Create your account in [Release](https://app.release.com/) if you don't already have one
-* Create a new application in Release using a fork of this repository
-* Update the `OPENAI_API_KEY` and `OPENAI_KEY` env variables with your OpenAI API Key
-* Deploy your application
-* Release will provide URLs for both the frontend and backend applications
 
 
 ## Indexing / Uploading your Docs
