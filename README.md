@@ -3,7 +3,7 @@
 [Gromit is a Ruby Gem](https://github.com/releasehub-com/gromit) that
 uses Redis and OpenAI embeddings to index your documentation. This 
 repository provides a Rails application, and a Next.js frontend application
-originally built by the folks at Supbase.
+originally built by the folks at [Supbase](https://supabase.com/).
 
 The Rails application provides an API interface to `redis-stack-server` that will
 store and allow searching of your documentation using OpenAI's embeddings.
@@ -53,7 +53,7 @@ npnm run dev
 
 ### Running in Release
 
-* Create your account in Release
+* Create your account in [Release](https://app.release.com/) if you don't already have one
 * Create a new application in Release using a fork of this repository
 * Update the `OPENAI_API_KEY` and `OPENAI_KEY` env variables with your OpenAI API Key
 * Deploy your application
