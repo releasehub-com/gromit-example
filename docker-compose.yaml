@@ -3,7 +3,7 @@ version: "3.9"
 services:
   backend:
     build:
-      context: .
+      context: ./backend
     ports:
       - "3000:3000"
     environment:
