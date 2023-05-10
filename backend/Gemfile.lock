@@ -88,6 +88,9 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.12.0)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
@@ -235,11 +238,13 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap
   capybara
   debug
+  dotenv-rails
   gromit
   importmap-rails
   jbuilder
