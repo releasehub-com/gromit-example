@@ -75,3 +75,5 @@ BASE_URL=https://gromit-rails.example.com bundle exec gromit-uploader -s /path/t
 ```
 
 
+---
+Made with love by the folks @ [release.com](release.com)
