@@ -72,7 +72,7 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    capybara (3.39.0)
+    capybara (3.39.1)
       addressable
       matrix
       mini_mime (>= 0.1.3)
@@ -84,7 +84,7 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
-    debug (1.7.2)
+    debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     dotenv (2.8.1)
@@ -100,10 +100,9 @@ GEM
     faraday-net_http (3.0.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    gromit (0.1.5)
-      dotenv
+    gromit (0.1.6)
+      activesupport
       httparty
-      rails (>= 7.0.1)
       redis (~> 4.2)
       rejson-rb (>= 1.0.1)
       ruby-openai
